@@ -1,0 +1,136 @@
+.portfolio {
+    display: flex;
+    &__nav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;bottom: 0;
+        left: 0;
+        width: 270px;
+        background: map-get($map: $colors, $key:primary );
+        &__imgCont {
+            width: 140px;
+            height: 140px;
+            border: 9px solid map-get($map: $colors, $key: nav2);
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        a {
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: 600;
+            color: map-get($map: $colors, $key:nav3 );
+            opacity: 0.7;
+            margin-top: 28px;
+            transition: opacity 120ms ease-in-out;
+            &:hover {
+                opacity: 1;
+                transition: opacity 120ms ease-in-out;
+            }
+        }
+    }
+    &__content {
+        margin-left: 270px;
+        &__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            h1 {
+                color: map-get($map: $colors, $key: primary);
+                font-size: 5.5em;
+                font-weight: 700;
+            }
+            h2 {
+                text-transform: uppercase;
+                font-size: 1.2em;
+                font-weight: 500;
+                color: map-get($map: $colors, $key:tertiary );
+            }
+            &__titleSpan {
+                color: map-get($map: $colors, $key:secondary );
+            }
+            p {
+                margin: 50px 0 50px;
+            }
+            &__socialCont {
+                padding-left: 45px;
+                display: flex;
+                &__social {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 3px solid map-get($map: $colors, $key:secondary);
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    img {
+                        height: 30px;
+                        
+                    }
+                }
+            }
+        }
+        &__project {
+            min-height: 100vh;
+            border-top: 1px solid transparentize(map-get($map: $colors, $key: tertiary), 0.8);
+            h2 {
+                margin: 70px 0;
+            }
+            article {
+                margin-bottom: 70px ;
+                h3 {
+                    font-size: 1.62em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: map-get($map: $colors, $key:secondary );
+                }
+                h4 {
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: map-get($map: $colors, $key:tertiary );
+                    margin-top: 7px;
+                }
+            }
+            &__para {
+                margin: 22px 0 18px;
+                p {
+                    margin-bottom: 7px;
+                }
+            }
+            &__optionsCont {
+                display: flex;
+                padding-left: 45px;
+                &__option {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* background: map-get($colors, secondary); */
+                    border: 3px solid map-get($colors, tertiary);
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 20px;
+                    border-radius: 50%;
+                    img {
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        &__skills {
+            height: 100vh;
+            border-top: 1px solid transparentize(map-get($map: $colors, $key: tertiary), 0.8);
+            &__logos {
+                display: flex;
+            }
+        }
+    }
+}
+
+#social__linkedin {
+    height: 20px;
+}
