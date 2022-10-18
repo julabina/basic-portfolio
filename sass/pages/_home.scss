@@ -67,9 +67,14 @@
                     height: 48px;
                     border-radius: 50%;
                     margin-right: 20px;
+                    transition: opacity 140ms ease-in-out;
                     img {
                         height: 30px;
                         
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                        transition: opacity 140ms ease-in-out;
                     }
                 }
             }
@@ -115,17 +120,130 @@
                     width: 40px;
                     margin-right: 20px;
                     border-radius: 50%;
+                    transition: opacity 140ms ease-in-out;
                     img {
                         height: 25px;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                        transition: opacity 140ms ease-in-out;
                     }
                 }
             }
         }
         &__skills {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             height: 100vh;
             border-top: 1px solid transparentize(map-get($map: $colors, $key: tertiary), 0.8);
+            h2 {
+                margin-bottom: 70px;
+            }
+            h3 {
+                margin-bottom: 35px;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: map-get($map: $colors, $key:tertiary );
+            }
             &__logos {
                 display: flex;
+                justify-content: space-between;
+                width: 700px;
+                padding-left: 40px;
+                &__cont {
+                    display: flex;
+                    align-items: center;
+                    &__img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            border-top: 1px solid transparentize(map-get($map: $colors, $key: tertiary), 0.8);
+            h2 {
+                margin-bottom: 70px;
+            }
+            &__form {
+                width: 1000px;
+                padding-left: 45px;
+                display: flex;
+                flex-direction: column;
+                input {
+                    height: 35px;
+                    margin-bottom: 25px;
+                    padding-left: 15px;
+                    border-radius: 0;
+                    border: 1px solid lighten(map-get($map: $colors, $key:tertiary), 15);
+                    color: map-get($map: $colors, $key:tertiary );
+                    &:focus {
+                        outline-color: lighten(map-get($map: $colors, $key:tertiary), 15);
+                    }
+                }
+                textarea {
+                    resize: vertical;
+                    height: 160px;
+                    padding: 15px;
+                    border-radius: 0;
+                    border: 1px solid lighten(map-get($map: $colors, $key:tertiary), 15);
+                    color: map-get($map: $colors, $key:tertiary );
+                    &:focus {
+                        outline-color: lighten(map-get($map: $colors, $key:tertiary), 15);
+                    }
+                }
+                button {
+                    margin-top: 30px;
+                    border: none;
+                    background: map-get($map: $colors, $key:primary );
+                    color: map-get($map: $colors, $key:white-light );
+                    text-transform: uppercase;
+                    padding: 15px 0;
+                    width: 100px;
+                    cursor: pointer;
+                    transition: all 150ms ease-in-out;
+                    border: 1px solid map-get($map: $colors, $key:primary );
+                    &:hover {
+                        background: initial;
+                        color: map-get($map: $colors, $key: primary);
+                        transition: all 150ms ease-in-out;
+                    }
+                }
+            }
+            &__emailCont {
+                display: flex;
+                align-items: center;
+                &__mailto {
+                    color: darken(map-get($map: $colors, $key:tertiary), 25);
+                }
+                &__copy {
+                    display: flex;
+                    align-items: center;
+                    width: 35px;
+                    justify-content: center;
+                    border: 1px solid map-get($map: $colors, $key:tertiary );
+                    border-radius: 7px;
+                    height: 35px;
+                    margin-left: 15px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    transition: opacity 140ms ease-in-out;
+                    img {
+                        width: 15px;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                        transition: opacity 140ms ease-in-out;
+                    }
+                }
+            }
+            &__or {
+                margin: 30px 0 15px;
             }
         }
     }
@@ -133,4 +251,17 @@
 
 #social__linkedin {
     height: 20px;
+}
+
+#skill_html {
+    height: 46px;
+    margin-top: -3px;
+}
+
+#skill_php {
+    height: 28px;
+}
+
+#skill_node {
+    height: 55px;
 }
