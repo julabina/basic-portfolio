@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <script src="assets/script/app.js" defer></script>
+    <title>Portfolio Lenfumé Julien</title>
+    <meta name="title" content="Portfolio Lenfumé Julien">
+    <meta name="description" content="Présentation des projets de Julien Lenfumé en react, node js et symfony - portfolio">
 </head>
 <body>
     <main class="portfolio">
@@ -42,15 +45,15 @@
                         <p>Ce réseau social est inspiré de Facebook, il possède un système d'amis et une messagerie instantanée grâce à socket.io.</p>
                     </div>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://www.social.julienlenfume.com"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://www.social.julienlenfume.com"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/at-solid.svg" alt="Live site icon">
                         </div></a>
-                        <a href="https://github.com/julabina/social_react_node"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/social_react_node"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('social')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -61,9 +64,9 @@
                         <p>Une fois créé l'administrateur peut générer la fiche de l'animal au format PDF et JPG pour les événements de l'association et le partage des animaux à adopter.</p>
                     </div>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('asso-back')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -71,15 +74,15 @@
                     <h4>Symfony 6</h4>
                     <p class="portfolio__content__project__para">Ce projet est réalisé en PHP avec symfony 6, plusieurs bundle sont utilisés, notament easyAdmin pour la partie back-office, vich-uploader pour les uploads d'images et Paginator qui gére la pagination.</p>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://www.forum.julienlenfume.com"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://www.forum.julienlenfume.com"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/at-solid.svg" alt="Live site icon">
                         </div></a>
-                        <a href="https://github.com/julabina/forum-symfony"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/forum-symfony"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('forum')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -87,7 +90,7 @@
                     <h4>Html - css - javascript</h4>
                     <p class="portfolio__content__project__para">Le site ou vous ête actuelement, Héberger sur un serveur Nginx via un droplet de Digital Ocean.</p>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://github.com/julabina/basic-portfolio"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/basic-portfolio"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
                     </div>
@@ -97,34 +100,34 @@
                     <h4>PHP 7.4.3</h4>
                     <p class="portfolio__content__project__para">suivrepoids.fr est un projet personnel reéalisé uniquement en PHP, le but de celui-ci est de permettre à l'utilisateur de suivre son poids et d'accomplir ses objectifs, il permet également de connaitre et de calculer son indice de masse corporel et son indice de masse grasse.</p>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://www.suivrepoids.fr/"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://www.suivrepoids.fr/"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/at-solid.svg" alt="Live site icon">
                         </div></a>
-                        <a href="https://github.com/julabina/suivi_poids"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/suivi_poids"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('weight')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <h3>React optique</h3>
                     <h4>React - node js</h4>
                     <div class="portfolio__content__project__para">
-                        <p>React optique est un projet personnel full-stack e-commerce de démonstration, au design largement inspiré de l'excellent site <a href="https://www.telescopes-et-accessoires.fr/">Optique unterlinden</a>.</p>
+                        <p>React optique est un projet personnel full-stack e-commerce de démonstration, au design largement inspiré de l'excellent site <a target="_blank" rel="noopener" href="https://www.telescopes-et-accessoires.fr/">Optique unterlinden</a>.</p>
                         <p>La partie front-end utilise React, Redux et le pré-processeur Sass pour le css, tandis que le back-end utilise node js, express et sequelize.</p>
                     </div>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://www.e-commerce.julienlenfume.com/"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://www.e-commerce.julienlenfume.com/"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/at-solid.svg" alt="Live site icon">
                         </div></a>
-                        <a href="https://github.com/julabina/e_shop_react_node"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/e_shop_react_node"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('optic')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -132,15 +135,15 @@
                     <h4>React</h4>
                     <p class="portfolio__content__project__para">le-rentable.fr est un simple outils qui permet de calculer la possible rentabilité d'un bien immobiler locatif.</p>
                     <div class="portfolio__content__project__optionsCont">
-                        <a href="https://www.le-rentable.fr/"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://www.le-rentable.fr/"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/at-solid.svg" alt="Live site icon">
                         </div></a>
-                        <a href="https://github.com/julabina/le-rentable"><div class="portfolio__content__project__optionsCont__option">
+                        <a target="_blank" rel="noopener" href="https://github.com/julabina/le-rentable"><div class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/github.svg" alt="github icon">
                         </div></a>
-                        <a href=""><div class="portfolio__content__project__optionsCont__option">
+                        <div onClick="openModal('rentable')" class="portfolio__content__project__optionsCont__option">
                             <img src="./assets/images/image-regular.svg" alt="Screenshot icon">
-                        </div></a>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -199,5 +202,17 @@
             </section>
         </div>
     </main>
+    <!-- Modal start -->
+    
+    <section class="modalCarrou modalCarrou--hidden">
+        <div class="modalCarrou__modal">
+            <div onClick="prev()" class="modalCarrou__modal__prev"><</div>
+            <div class="modalCarrou__modal__cont"></div>
+            <div onClick="next()" class="modalCarrou__modal__next">></div>
+            <div onClick="closeModal()" class="modalCarrou__modal__closeBtn">X</div>
+        </div>
+    </section>
+    
+    <!-- Modal end -->
 </body>
 </html>
