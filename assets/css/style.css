@@ -185,6 +185,21 @@ h1, h2, h3, h4 {
 .modalCarrou__modal__cont__imgCont--hidden {
   display: none;
 }
+@media screen and (max-width: 1100px) {
+  .modalCarrou__modal {
+    top: 50%;
+  }
+  .modalCarrou__modal__cont {
+    display: flex;
+    justify-content: center;
+  }
+  .modalCarrou__modal__cont__imgCont {
+    width: 80%;
+  }
+  .modalCarrou__modal__cont__imgCont img {
+    width: 85%;
+  }
+}
 .modalCarrou--hidden {
   display: none;
 }
@@ -506,12 +521,18 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 790px) {
   .portfolio__content__skills__logos {
     width: auto;
+    padding-left: 0;
   }
   .portfolio__content__skills__logos__mainCont {
     flex-direction: column;
     align-items: center;
     width: 50%;
     justify-content: initial;
+  }
+  .portfolio__content__skills__logos__mainCont__cont {
+    margin-bottom: 30px;
+    height: 20px;
+    width: auto;
   }
 }
 

@@ -57,6 +57,19 @@
                 }
             }
         }
+        @include toTablet {
+            top: 50%;
+            &__cont {
+                display: flex;
+                justify-content: center;
+                &__imgCont {
+                    width: 80%;
+                    img {
+                        width: 85%;
+                    }
+                }
+            }
+        }
     }
     &--hidden {
         display: none;
