@@ -16,3 +16,15 @@
         transition: color 120ms ease-in-out;
     }
 }
+
+@mixin toTablet {
+    @media screen and (max-width: map-get($queries, toTablet)) {
+        @content;
+    }
+}
+
+@mixin toMobile {
+    @media screen and (max-width: map-get($queries, toMobile)) {
+        @content;
+    }
+}

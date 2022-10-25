@@ -79,6 +79,20 @@ const closeModal = () => {
     modal.classList.add('modalCarrou--hidden');
 };
 
+const toggleMenu = () => {
+    const menu = document.querySelector('.portfolio__nav');
+    const cross = document.querySelector('.portfolio__cross');
+
+    if (menu.classList.contains('portfolio__nav--hidden')) {
+        menu.classList.remove('portfolio__nav--hidden');
+        cross.classList.remove('portfolio__cross--hidden');
+    } else {
+        menu.classList.add('portfolio__nav--hidden');
+        cross.classList.add('portfolio__cross--hidden');
+    }
+    
+};
+
 window.onscroll = () => {
     const sectionsClass = document.querySelectorAll('.portfolio__content__section');
     const menus = document.querySelectorAll('.portfolio__nav__menu');
@@ -87,9 +101,8 @@ window.onscroll = () => {
 
     sectionsClass.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop ) {
+        if (scrollY >= sectionTop ) {
             current = section.getAttribute("id"); 
-            console.log(current);
         }
     });
 
@@ -97,7 +110,6 @@ window.onscroll = () => {
         menu.classList.remove("portfolio__nav__menu--active");
         
         if (menu.classList.contains("portfolio__nav__menu__" + current)) {
-            console.log("portfolio__nav__menu__" + current);
             menu.classList.add("portfolio__nav__menu--active");
         } 
     });

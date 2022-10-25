@@ -192,6 +192,9 @@ h1, h2, h3, h4 {
 .portfolio {
   display: flex;
 }
+.portfolio__hamb, .portfolio__cross {
+  display: none;
+}
 .portfolio__nav {
   position: fixed;
   display: flex;
@@ -231,6 +234,9 @@ h1, h2, h3, h4 {
 }
 .portfolio__content {
   margin-left: 270px;
+}
+.portfolio__content br {
+  display: none;
 }
 .portfolio__content__about {
   display: flex;
@@ -358,11 +364,17 @@ h1, h2, h3, h4 {
   width: 700px;
   padding-left: 40px;
 }
-.portfolio__content__skills__logos__cont {
+.portfolio__content__skills__logos__mainCont {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px;
+}
+.portfolio__content__skills__logos__mainCont__cont {
   display: flex;
   align-items: center;
 }
-.portfolio__content__skills__logos__cont__img {
+.portfolio__content__skills__logos__mainCont__cont__img {
   height: 40px;
 }
 .portfolio__content__contact {
@@ -449,6 +461,58 @@ h1, h2, h3, h4 {
 }
 .portfolio__content__contact__or {
   margin: 30px 0 15px;
+}
+@media screen and (max-width: 1100px) {
+  .portfolio__hamb, .portfolio__cross {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 11px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 130ms ease-in-out;
+  }
+  .portfolio__hamb:hover, .portfolio__cross:hover {
+    opacity: 0.6;
+    transition: opacity 130ms ease-in-out;
+  }
+  .portfolio__cross {
+    left: 15px;
+    z-index: 10;
+  }
+  .portfolio__cross--hidden {
+    display: none;
+  }
+  .portfolio__nav {
+    width: 100%;
+  }
+  .portfolio__nav__imgCont {
+    display: none;
+  }
+  .portfolio__nav--hidden {
+    display: none;
+  }
+  .portfolio__content {
+    margin-left: 0;
+    padding-right: 25px;
+  }
+  .portfolio__content br {
+    display: inline;
+  }
+  .portfolio__content__about h1 {
+    display: inline;
+  }
+}
+@media screen and (max-width: 790px) {
+  .portfolio__content__skills__logos {
+    width: auto;
+  }
+  .portfolio__content__skills__logos__mainCont {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: initial;
+  }
 }
 
 #social__linkedin {
