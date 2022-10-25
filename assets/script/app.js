@@ -78,3 +78,27 @@ const next = () => {
 const closeModal = () => {
     modal.classList.add('modalCarrou--hidden');
 };
+
+window.onscroll = () => {
+    const sectionsClass = document.querySelectorAll('.portfolio__content__section');
+    const menus = document.querySelectorAll('.portfolio__nav__menu');
+
+    let current = "";
+
+    sectionsClass.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop ) {
+            current = section.getAttribute("id"); 
+            console.log(current);
+        }
+    });
+
+    menus.forEach((menu) => {
+        menu.classList.remove("portfolio__nav__menu--active");
+        
+        if (menu.classList.contains("portfolio__nav__menu__" + current)) {
+            console.log("portfolio__nav__menu__" + current);
+            menu.classList.add("portfolio__nav__menu--active");
+        } 
+    });
+};

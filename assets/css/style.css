@@ -215,7 +215,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  color: #EED6CD;
   opacity: 0.7;
   margin-top: 28px;
   transition: opacity 120ms ease-in-out;
@@ -223,6 +222,12 @@ h1, h2, h3, h4 {
 .portfolio__nav a:hover {
   opacity: 1;
   transition: opacity 120ms ease-in-out;
+}
+.portfolio__nav__menu {
+  color: #EED6CD;
+}
+.portfolio__nav__menu--active {
+  color: #343A40;
 }
 .portfolio__content {
   margin-left: 270px;
@@ -305,6 +310,11 @@ h1, h2, h3, h4 {
   display: flex;
   padding-left: 45px;
 }
+.portfolio__content__project__optionsCont a {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
 .portfolio__content__project__optionsCont__option {
   display: flex;
   justify-content: center;
@@ -315,6 +325,7 @@ h1, h2, h3, h4 {
   width: 40px;
   margin-right: 20px;
   border-radius: 50%;
+  cursor: pointer;
   transition: opacity 140ms ease-in-out;
 }
 .portfolio__content__project__optionsCont__option img {
