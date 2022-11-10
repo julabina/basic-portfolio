@@ -89,6 +89,24 @@
                         transition: opacity 140ms ease-in-out;
                     }
                 }
+                &__dlBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;
+                    border: 3px solid map-get($map: $colors, $key: secondary);
+                    border-radius: 50%;
+                    font-weight: 700;
+                    color: map-get($map: $colors, $key: secondary);
+                    cursor: pointer;
+                    transition: all 150ms ease-in-out;
+                    &:hover {
+                        background: map-get($colors, secondary);
+                        color: map-get($map: $colors, $key:white-light );
+                        transition: all 150ms ease-in-out;
+                    }
+                }
             }
         }
         &__project {

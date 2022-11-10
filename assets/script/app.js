@@ -93,6 +93,10 @@ const toggleMenu = () => {
     
 };
 
+const downloadCV = () => {
+    window.open('/assets/cv/CV_Julien_Lenfumé.pdf', '_blank', null);
+};
+
 window.onscroll = () => {
     const sectionsClass = document.querySelectorAll('.portfolio__content__section');
     const menus = document.querySelectorAll('.portfolio__nav__menu');
