@@ -223,6 +223,7 @@ h1, h2, h3, h4 {
   background: #BD5D38;
 }
 .portfolio__nav__imgCont {
+  display: none;
   width: 140px;
   height: 140px;
   border: 9px solid #CA7D60;

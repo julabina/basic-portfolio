@@ -3,7 +3,6 @@
     &__hamb, &__cross {
         display: none;
     }
-    
     &__nav {
         position: fixed;
         display: flex;
@@ -15,6 +14,7 @@
         width: 270px;
         background: map-get($map: $colors, $key:primary );
         &__imgCont {
+            display: none;
             width: 140px;
             height: 140px;
             border: 9px solid map-get($map: $colors, $key: nav2);
