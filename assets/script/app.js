@@ -4,6 +4,7 @@ const screenAssoBack = ['asso-back/1.webp', 'asso-back/2.webp', 'asso-back/3.web
 const screenForum = ['forum/1.webp', 'forum/2.webp', 'forum/3.webp', 'forum/4.webp', 'forum/5.webp'];
 const screenWeight = ['weight/1.webp', 'weight/2.webp', 'weight/3.webp', 'weight/4.webp', 'weight/5.webp', 'weight/6.webp', 'weight/7.webp'];
 const screenOptic = ['optic/1.webp', 'optic/2.webp', 'optic/3.webp', 'optic/4.webp', 'optic/5.webp', 'optic/6.webp', 'optic/7.webp', 'optic/8.webp', 'optic/9.webp', 'optic/10.webp'];
+const screenSeriescope = ['seriescope/1.webp', 'seriescope/2.webp', 'seriescope/3.webp', 'seriescope/4.webp', 'seriescope/5.webp', 'seriescope/6.webp', 'seriescope/7.webp', 'seriescope/8.webp', 'seriescope/9.webp', 'seriescope/10.webp', 'seriescope/11.webp'];
 const screenRentable = ['rentable/1.webp', 'rentable/2.webp'];
 let imgArr = [];
 
@@ -24,6 +25,8 @@ const openModal = (project) => {
         imgArr = screenOptic;
     } else if(project === "rentable") {
         imgArr = screenRentable;
+    } else if (project === 'seriescope') {
+        imgArr = screenSeriescope;
     }
     
     for (let i = 0; i < imgArr.length; i++) {
