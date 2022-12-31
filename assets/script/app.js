@@ -6,6 +6,8 @@ const screenWeight = ['weight/1.webp', 'weight/2.webp', 'weight/3.webp', 'weight
 const screenOptic = ['optic/1.webp', 'optic/2.webp', 'optic/3.webp', 'optic/4.webp', 'optic/5.webp', 'optic/6.webp', 'optic/7.webp', 'optic/8.webp', 'optic/9.webp', 'optic/10.webp'];
 const screenSeriescope = ['seriescope/1.webp', 'seriescope/2.webp', 'seriescope/3.webp', 'seriescope/4.webp', 'seriescope/5.webp', 'seriescope/6.webp', 'seriescope/7.webp', 'seriescope/8.webp', 'seriescope/9.webp', 'seriescope/10.webp', 'seriescope/11.webp'];
 const screenRentable = ['rentable/1.webp', 'rentable/2.webp'];
+const screenGames = ['games/1.webp', 'games/2.webp', 'games/3.webp', 'games/4.webp', 'games/5.webp', 'games/6.webp', 'games/7.webp', 'games/8.webp', 'games/9.webp', 'games/10.webp', 'games/11.webp', 'games/12.webp'];
+const screenFrontend = ['frontendmentor/1.webp', 'frontendmentor/2.webp', 'frontendmentor/3.webp', 'frontendmentor/4.webp', 'frontendmentor/5.webp'];
 let imgArr = [];
 
 const openModal = (project) => {
@@ -27,6 +29,10 @@ const openModal = (project) => {
         imgArr = screenRentable;
     } else if (project === 'seriescope') {
         imgArr = screenSeriescope;
+    } else if (project === 'games') {
+        imgArr = screenGames;
+    } else if (project === 'frontendmentor') {
+        imgArr = screenFrontend;
     }
     
     for (let i = 0; i < imgArr.length; i++) {
