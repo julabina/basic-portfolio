@@ -559,6 +559,10 @@ h1, h2, h3, h4 {
   height: 20px;
 }
 
+#social__gitlab {
+  height: 50px;
+}
+
 #skill_html {
   height: 46px;
   margin-top: -3px;
