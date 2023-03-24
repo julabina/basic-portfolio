@@ -8,6 +8,7 @@ const screenSeriescope = ['seriescope/1.webp', 'seriescope/2.webp', 'seriescope/
 const screenRentable = ['rentable/1.webp', 'rentable/2.webp'];
 const screenGames = ['games/1.webp', 'games/2.webp', 'games/3.webp', 'games/4.webp', 'games/5.webp', 'games/6.webp', 'games/7.webp', 'games/8.webp', 'games/9.webp', 'games/10.webp', 'games/11.webp', 'games/12.webp'];
 const screenFrontend = ['frontendmentor/1.webp', 'frontendmentor/2.webp', 'frontendmentor/3.webp', 'frontendmentor/4.webp', 'frontendmentor/5.webp'];
+const screenKanban = ['kanban/1.webp', 'kanban/2.webp', 'kanban/3.webp', 'kanban/4.webp', 'kanban/5.webp', 'kanban/6.webp'];
 let imgArr = [];
 
 const openModal = (project) => {
@@ -33,6 +34,8 @@ const openModal = (project) => {
         imgArr = screenGames;
     } else if (project === 'frontendmentor') {
         imgArr = screenFrontend;
+    } else if (project === 'kanban') {
+        imgArr = screenKanban;
     }
     
     for (let i = 0; i < imgArr.length; i++) {
