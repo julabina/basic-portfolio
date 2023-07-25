@@ -10,6 +10,7 @@ const screenGames = ['games/1.webp', 'games/2.webp', 'games/3.webp', 'games/4.we
 const screenFrontend = ['frontendmentor/1.webp', 'frontendmentor/2.webp', 'frontendmentor/3.webp', 'frontendmentor/4.webp', 'frontendmentor/5.webp'];
 const screenKanban = ['kanban/1.webp', 'kanban/2.webp', 'kanban/3.webp', 'kanban/4.webp', 'kanban/5.webp', 'kanban/6.webp'];
 const screenPoll = ['poll/1.webp', 'poll/2.webp', 'poll/3.webp', 'poll/4.webp'];
+const screenJobs = ['jobs/1.webp', 'jobs/2.webp', 'jobs/3.webp', 'jobs/4.webp', 'jobs/5.webp', 'jobs/6.webp', 'jobs/7.webp', 'jobs/8.webp'];
 let imgArr = [];
 
 const openModal = (project) => {
@@ -39,6 +40,8 @@ const openModal = (project) => {
         imgArr = screenKanban;
     } else if (project === 'poll') {
         imgArr = screenPoll;
+    } else if (project === 'jobs') {
+        imgArr = screenJobs;
     }
     
     for (let i = 0; i < imgArr.length; i++) {
